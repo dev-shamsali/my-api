@@ -1,0 +1,40 @@
+{
+  "name": "my-api",
+  "version": "0.1.0",
+  "private": true,
+  "description": "my-api: a JavaScript API built with Rhea.js",
+  "type": "module",
+  "main": "src/server.js",
+  "engines": {
+    "node": ">=20.19.0"
+  },
+  "scripts": {
+    "dev": "nodemon",
+    "start": "node src/server.js",
+    "start:env": "node --env-file=.env src/server.js",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "doctor": "rhea doctor",
+    "security": "rhea security"
+  },
+  "dependencies": {
+    "@rheajs/auth": "^1.0.0",
+    "@rheajs/core": "^1.0.0",
+    "mongodb": "^7.7.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.5",
+    "@rheajs/cli": "^1.0.0",
+    "@vitest/coverage-v8": "~4.0.18",
+    "eslint": "^9.39.5",
+    "globals": "^17.13.0",
+    "nodemon": "^3.1.14",
+    "prettier": "^3.9.9",
+    "supertest": "^7.3.1",
+    "vitest": "~4.0.18"
+  }
+}

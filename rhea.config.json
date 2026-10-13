@@ -1,0 +1,6 @@
+{
+  "language": "js",
+  "module": "esm",
+  "database": "mongodb",
+  "auth": true
+}
